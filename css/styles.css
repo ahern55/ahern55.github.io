@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+header {
+	height: 93.5vh;
+}
+
+footer {
+	height: 93.5vh;
+}
+
+.hidden {
+	display: none;
+}
+
+#navigation {
+	max-height: 7vh;
+}
+
+#info-sections {
+    height: 100vh;
+	overflow: hidden;
+}
+
+.panel {
+	height: 93.5vh;
+  	width: 100%;
+  	position: absolute;
+  	text-align:center;
+	background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+}
+
+#navbar-spacer {
+	height: 6.5vh;
+}
+
+header h1{
+    font-size: 60px;
+}
+
+b {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	position:relative;
+	font-size:30px;
+}
