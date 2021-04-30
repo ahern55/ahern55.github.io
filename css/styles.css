@@ -5,7 +5,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-header, footer {
+header, footer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +19,18 @@ header {
 
 footer {
 	height: 100vh;
+}
+
+#logoWrapper {
+	position: fixed;
+	z-index: 1;
+	top: 2.5%;
+	left: 2.5%;
+	width: 7%;
+}
+
+#logo {
+	max-width: 50%;
 }
 
 .hidden {
@@ -38,8 +50,22 @@ footer {
 	height: 100vh;
   	width: 100%;
   	position: absolute;
+	z-index: -1;
   	text-align:center;
 	background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+}
+
+#headshotWrapper {
+	position: absolute;
+	justify-content: center;
+	align-items: baseline;
+	bottom: 0%;
+	width: 90%;
+	left: 5%;
+}
+
+#headshot {
+	max-width: 50%;
 }
 
 #navbar-spacer {
