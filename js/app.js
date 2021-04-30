@@ -1,16 +1,16 @@
 $(function () {
     var controller = new ScrollMagic.Controller();
-    
-    new ScrollMagic.Scene(
-        {triggerElement: "#info-sections", 
-        triggerHook: 1, 
-        duration: 100,
-        offset: -43
-        })
-        .setClassToggle("#navigation", "hidden") // add class toggle
-        .addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
-    
+
+    // new ScrollMagic.Scene(
+    //     {triggerElement: "#info-sections",
+    //     triggerHook: 1,
+    //     duration: 100,
+    //     offset: -43
+    //     })
+    //     .setClassToggle("#navigation", "hidden") // add class toggle
+    //     .addIndicators() // add indicators (requires plugin)
+    //     .addTo(controller);
+
    var wipeAnimation = new TimelineMax()
          .fromTo("section.panel.second", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
          .fromTo("section.panel.third",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
