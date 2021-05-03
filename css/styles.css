@@ -55,17 +55,19 @@ footer {
 	background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
 }
 
-#headshotWrapper {
-	position: absolute;
-	justify-content: center;
-	align-items: baseline;
-	bottom: 0%;
-	width: 90%;
-	left: 5%;
+#headshot-wrapper {
+	position:relative;
+	left: auto;
+	height: 100%;
 }
 
 #headshot {
-	max-width: 50%;
+	max-height: 50rem;
+	position: absolute;
+	margin:auto;
+	left: 0;
+	right: 0;
+	bottom: 0%;
 }
 
 #navbar-spacer {
