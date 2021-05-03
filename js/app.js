@@ -36,7 +36,7 @@ $(function () {
      .addTo(controller);
 
 	//  bind scroll to anchor links
-	$(document).on("click", "a", function (e) {
+	$(document).on("click", ".nav-link", function (e) {
 		var value = $(this).attr("href");
 		e.preventDefault();
 
