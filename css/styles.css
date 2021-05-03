@@ -5,21 +5,20 @@
     font-family: "Montserrat", sans-serif;
 }
 
-header, footer{
+#header-wrapper, footer{
     display: flex;
+	flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-}
-
-header {
 	height: 100vh;
 }
 
-footer {
-	height: 100vh;
+h1{
+    font-size: 60px;
 }
+
 
 #logo-wrapper {
 	position: fixed;
@@ -128,12 +127,12 @@ footer {
 	bottom: 0%;
 }
 
-#navbar-spacer {
-	height: 6.5vh;
+#experience {
+	height: 200vh;
 }
 
-header h1{
-    font-size: 60px;
+#navbar-spacer {
+	height: 6.5vh;
 }
 
 b {

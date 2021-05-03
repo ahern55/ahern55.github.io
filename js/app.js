@@ -22,10 +22,21 @@ $(function () {
     //     .addTo(controller)
     //     .reverse(true);
 
-   var wipeAnimation = new TimelineMax()
-         .fromTo("#socials-wrapper", 1, {opacity: 0}, {opacity: 1, ease: Linear.easeNone})  // in from left
-         .fromTo("section.panel.second", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-         .fromTo("section.panel.third",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+    var schoolAnimation = new TimelineMax()
+         .fromTo("#school", 1, {opacity: 0}, {opacity: 1, ease: Linear.easeNone})  // fades in
+         // create scene to pin and link animation
+     new ScrollMagic.Scene({
+         triggerElement: "#header-wrapper",
+         triggerHook: "onLeave",
+         duration: "100%",
+     })
+     .setPin("#header-wrapper")
+     .setTween(schoolAnimation)
+     .addTo(controller);
+
+   var animation = new TimelineMax()
+         .fromTo("#socials-wrapper", 1, {opacity: 0}, {opacity: 1, ease: Linear.easeNone})  // fades in
+         .fromTo("section.panel.second", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
          // create scene to pin and link animation
      new ScrollMagic.Scene({
          triggerElement: "#info-sections",
@@ -33,7 +44,7 @@ $(function () {
          duration: "200%",
      })
      .setPin("#info-sections")
-     .setTween(wipeAnimation)
+     .setTween(animation)
      .addTo(controller);
 
 	//  bind scroll to anchor links
