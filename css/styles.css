@@ -56,17 +56,20 @@ footer {
 }
 
 #headshot-wrapper {
-	position:relative;
-	left: auto;
+	position:absolute;
+	left: 0;
+	right: 0;
 	height: 100%;
+	text-align: center;
 }
 
 #headshot {
-	max-height: 50rem;
+	max-height: 80%;
+	max-width: 100%;
 	position: absolute;
 	margin:auto;
-	left: 0;
 	right: 0;
+	left:0;
 	bottom: 0%;
 }
 
