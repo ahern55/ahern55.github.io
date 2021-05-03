@@ -37,6 +37,8 @@ $(function () {
    var animation = new TimelineMax()
          .fromTo("#socials-wrapper", 1, {opacity: 0}, {opacity: 1, ease: Linear.easeNone})  // fades in
          .fromTo("section.panel.second", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+         .fromTo("#resume", 1, {opacity: 1}, {opacity: 0, ease: Linear.easeNone})  // fades out
+         .fromTo("#timeline", 2, {y: "0%"}, {y: "-100%", ease: Linear.easeNone})
          // create scene to pin and link animation
      new ScrollMagic.Scene({
          triggerElement: "#info-sections",
