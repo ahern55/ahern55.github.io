@@ -21,12 +21,12 @@ footer {
 	height: 100vh;
 }
 
-#logoWrapper {
+#logo-wrapper {
 	position: fixed;
 	z-index: 1;
-	top: 2.5%;
-	left: 2.5%;
-	width: 7%;
+	top: 1rem;
+	left: 1rem;
+	width: 10rem;
 }
 
 #logo {
@@ -55,11 +55,46 @@ footer {
 	background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
 }
 
+#socials-wrapper {
+	display: flex;
+	flex-direction: row;
+	height: 15%;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10rem;
+}
+
+.social-icon {
+	max-width: 12rem;
+	align-items: center;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+@media (max-width: 660px) {
+	.social-icon {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 9rem;
+	}
+  }
+
+@media (max-width: 440px) {
+	#socials-wrapper {
+	  flex-direction: column;
+	}
+
+	.social-icon {
+		max-width: 8rem;
+	}
+  }
+
 #headshot-wrapper {
 	position:absolute;
 	left: 0;
 	right: 0;
-	height: 100%;
+	bottom: 0;
+	height: 80%;
 	text-align: center;
 }
 

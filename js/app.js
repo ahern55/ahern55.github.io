@@ -11,6 +11,17 @@ $(function () {
     //     .addIndicators() // add indicators (requires plugin)
     //     .addTo(controller);
 
+    // new ScrollMagic.Scene(
+    //     {triggerElement: "#info-sections",
+    //     triggerHook: 0,
+    //     duration: 100,
+    //     offset: 0,
+    //     })
+    //     .setClassToggle("#logo-wrapper", "hidden") // add class toggle
+    //     .addIndicators() // add indicators (requires plugin)
+    //     .addTo(controller)
+    //     .reverse(true);
+
    var wipeAnimation = new TimelineMax()
          .fromTo("section.panel.second", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
          .fromTo("section.panel.third",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
