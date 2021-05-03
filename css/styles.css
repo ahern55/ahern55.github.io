@@ -81,21 +81,16 @@ footer {
 @media (max-width: 440px) {
 	#socials-wrapper {
 	  flex-direction: column;
-	  margin-top: 4rem;
+	  margin-top: 6rem;
 	}
 
 	.social-icon {
 		max-width: 8rem;
 	}
 
-	.social-icon-link {
-		position:absolute;
-		z-index: 10;
-		left: 0; right: 0;
-	}
   }
 
-  @media (max-width: 440px) and (max-height: 800px) {
+  @media (max-width: 440px) and (max-height: 750px) {
 	#socials-wrapper {
 	  display: block;
 	  margin-top: 1rem;
@@ -117,12 +112,13 @@ footer {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	height: 70%;
+	height: 80%;
 	text-align: center;
+	z-index: -1;
 }
 
 #headshot {
-	max-height: 100%;
+	max-height: 80%;
 	max-width: 100%;
 	position: absolute;
 	margin:auto;

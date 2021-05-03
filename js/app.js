@@ -23,6 +23,7 @@ $(function () {
     //     .reverse(true);
 
    var wipeAnimation = new TimelineMax()
+         .fromTo("#socials-wrapper", 1, {opacity: 0}, {opacity: 1, ease: Linear.easeNone})  // in from left
          .fromTo("section.panel.second", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
          .fromTo("section.panel.third",    1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
          // create scene to pin and link animation
