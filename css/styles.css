@@ -61,6 +61,7 @@ footer {
 	height: 30%;
 	align-items: center;
 	justify-content: center;
+	margin-top: 7rem;
 }
 
 .social-icon {
@@ -90,7 +91,7 @@ footer {
 
   }
 
-  @media (max-width: 440px) and (max-height: 750px) {
+  @media (max-width: 440px) and (max-height: 820px) {
 	#socials-wrapper {
 	  display: block;
 	  margin-top: 1rem;
