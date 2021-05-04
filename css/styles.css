@@ -89,25 +89,35 @@ h1 {
   margin-right: 1rem;
 }
 
-@media (max-width: 660px) {
-  .social-icon {
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 9rem;
-  }
+@media (max-width: 440px) {
+	#socials-wrapper {
+		flex-direction: column;
+		margin-top: 4.5rem;
+	}
+	
+	.social-icon {
+		max-width: 7rem;
+	}
 }
 
 @media (max-width: 440px) {
-  #socials-wrapper {
-    flex-direction: column;
-    margin-top: 4.5rem;
-  }
-
-  .social-icon {
-    max-width: 7rem;
-  }
+	#socials-wrapper {
+		flex-direction: column;
+		margin-top: 4.5rem;
+	}
+	
+	.social-icon {
+		max-width: 7rem;
+	}
 }
 
+@media (max-width: 660px) {
+  .social-icon {
+	margin-left: 0;
+	margin-right: 0;
+	max-width: 9rem;
+  }
+}
 @media (max-height: 700px) {
 	#socials-wrapper {
 	  margin-top: 1rem;
@@ -190,6 +200,23 @@ img {
 
 }
 
+#timeline-icon {
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 2;
+	width: 40px;
+	height: 40px;
+	top: 40%;
+	margin-left: calc(50% - 19px);	
+}
+
+
+@media (max-width: 999px) {
+	#timeline-icon {
+		display: none;
+	}
+}
+
 /*
  * this is some goofy figuring we have to do since we are using flex box.
  * in the future, I would like to transition to a more extensible grid layout...
@@ -245,6 +272,7 @@ img {
   top: 0;
   bottom: 0;
   left: 50%;
+  border-left: 3px solid var(--dark-gray);
 }
 /*this is the line in the center of the timeline */
 @media (min-width: 1000px) {
