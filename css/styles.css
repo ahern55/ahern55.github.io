@@ -143,8 +143,8 @@ b {
 	font-size:30px;
 }
 
-#testing {
-	height: 100vh;
+#experience {
+	background-color: white;
 }
 
 /***************************************************************************************************/
@@ -201,9 +201,7 @@ b {
   
   #timeline {
 	padding: 100px 0;
-	background-color: transparent;
-	border-top: 1px solid rgba(191, 191, 191, 0.4);
-	border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+	background-image: linear-gradient(to top, #fbc8d4 0%, #9795f0 100%);	border-top: 1px solid rgba(191, 191, 191, 0.4);
 	height: fit-content;
   }
   #timeline h1 {
