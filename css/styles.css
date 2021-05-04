@@ -147,6 +147,13 @@ b {
 	background-color: white;
 }
 
+#resume-button-wrapper {
+	margin-top: 2%;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
 /***************************************************************************************************/
 
 @media (min-width: 1000px) {

@@ -68,4 +68,9 @@ $(function () {
 		// 	history.pushState("", document.title, id);
 		// }
 	});
+
+    $(document).on("click", "#resume-button", function(e) {
+        window.open("resources/resume.pdf", "_blank");
+    });
+
 });
