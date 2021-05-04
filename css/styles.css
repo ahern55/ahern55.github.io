@@ -122,6 +122,15 @@ h1 {
   }
 }
 
+@media (max-height: 700px) {
+	#socials-wrapper {
+	  margin-top: 1rem;
+	}
+	.social-icon {
+		max-width: 9rem;
+	}
+  }
+
 #headshot-wrapper {
   position: absolute;
   left: 0;
@@ -181,6 +190,10 @@ img {
 
 }
 
+/*
+ * this is some goofy figuring we have to do since we are using flex box.
+ * in the future, I would like to transition to a more extensible grid layout...
+ */
 .timeline-card:nth-child(1) {
   order: 1;
 }
@@ -201,14 +214,9 @@ img {
   order: 3;
 }
 
-.timeline-card:nth-child(6) {
-  order: 6;
-}
-
 #timeline {
   padding: 100px 0;
   background-image: var(--reverse-gradient);
-  height: fit-content;
 }
 
 #timeline-divider {
@@ -248,12 +256,14 @@ img {
   position: relative;
   display: block;
   margin: 10px auto 80px;
-  max-width: 94%;
+  max-width: 90%;
+  max-height: 90%;
   z-index: 2;
 }
 @media (min-width: 480px) {
   #timeline .timeline-card {
     max-width: 90%;
+	max-height: 90%;
     box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
   }
 }
