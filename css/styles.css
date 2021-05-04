@@ -314,19 +314,20 @@ b {
 	float: left;
 	margin: 15px;
 	padding: 10px;
-	font-size: 35px;
-	line-height: 35px;
+	font-size: 30px;
+	line-height: 30px;
 	font-weight: 600;
 	background: rgba(0, 0, 0, 0.17);
   }
   #timeline .demo-card .head h2 {
 	text-transform: uppercase;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	font-weight: inherit;
 	letter-spacing: 2px;
 	margin: 0;
 	padding-bottom: 6px;
 	line-height: 1rem;
+	text-align: center;
   }
   @media (min-width: 480px) {
 	#timeline .demo-card .head h2 {
@@ -364,13 +365,13 @@ b {
 	display: block;
 	width: 100%;
   }
-  #timeline .demo-card--step1 {
+  #timeline .demo-card {
 	background-color: black;
   }
-  #timeline .demo-card--step1 .head::after {
+  #timeline .demo-card .head::after {
 	border-color: black;
   }
-  #timeline .demo-card--step2 {
+  /* #timeline .demo-card--step2 {
 	background-color: #3ee9d1;
   }
   #timeline .demo-card--step2 .head::after {
@@ -393,4 +394,4 @@ b {
   }
   #timeline .demo-card--step5 .head::after {
 	border-color: #46b8e9;
-  }
+  } */
