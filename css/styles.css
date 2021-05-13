@@ -13,6 +13,9 @@
     var(--first-gradient-color) 100%
   );
   --dark-gray: rgb(153, 153, 153);
+  
+  /* others */
+  --height: calc(100vh);
 }
 
 * {
@@ -31,7 +34,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  height: 100vh;
+  height: var(--height);
 }
 
 .hidden {
@@ -59,7 +62,7 @@ h1 {
 }
 
 #info-sections {
-  height: 100vh;
+  height: var(--height);
   overflow: hidden;
 }
 
