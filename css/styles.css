@@ -64,13 +64,6 @@ h1 {
   overflow: hidden;
 }
 
-@media (max-width : 700px) {
-  body {
-    max-height: 95vh;
-    height: 95vh;
-  }
-}
-
 .panel {
   height: 100%;
   width: 100%;
