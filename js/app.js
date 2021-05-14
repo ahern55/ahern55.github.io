@@ -1,4 +1,6 @@
 $(function () {
+  setHeight();
+  $(window).on('resize orientationchange', setHeight);
   var controller = new ScrollMagic.Controller();
 
   // new ScrollMagic.Scene(
@@ -92,3 +94,8 @@ $(function () {
     window.open("resources/resume.pdf", "_blank");
   });
 });
+
+function setHeight() {
+    block = $('.edit-height');
+    block.css({'height': '100vh'}) 
+}

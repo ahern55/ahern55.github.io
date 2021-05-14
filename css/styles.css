@@ -34,7 +34,6 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  height: 100vh;
 }
 
 .hidden {
@@ -62,7 +61,6 @@ h1 {
 }
 
 #info-sections {
-  height: 100vh;
   overflow: hidden;
 }
 
