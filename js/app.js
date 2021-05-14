@@ -1,5 +1,5 @@
 $(function () {
-   setHeight();
+  //  setHeight();
   // $(window).on('resize orientationchange', setHeight);
   var controller = new ScrollMagic.Controller();
 

@@ -38,10 +38,10 @@ footer {
   text-align: center;
 }
 
-/* .edit-height {
+.edit-height {
+  height: -webkit-fill-available;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
-} */
+}
 
 .hidden {
   display: none;
