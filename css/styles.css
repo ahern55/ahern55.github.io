@@ -42,6 +42,12 @@ footer {
   height: 100vh;
 }
 
+@media (max-width : 740px) {
+  .edit-height {
+    height: 900px;  
+  }
+}
+
 .hidden {
   display: none;
 }
