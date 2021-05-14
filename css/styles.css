@@ -14,8 +14,6 @@
   );
   --dark-gray: rgb(153, 153, 153);
   
-  /* others */
-  --height: calc(100vh);
 }
 
 * {
@@ -23,6 +21,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+}
+
+body {
+  bottom: 0;
 }
 
 #header-wrapper,
