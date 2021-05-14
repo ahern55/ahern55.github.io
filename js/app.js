@@ -96,7 +96,9 @@ $(function () {
 });
 
 function setHeight() {
-    windowHeight = $(window).height(),
+    windowHeight = $(window).height();
     block = $('.edit-height');
-    block.css({'height': windowHeight + 'px'}) 
+    block.css({'height': windowHeight + 'px'});
+    block.css({'min-height': windowHeight + 'px'});
+    block.css({'max-height': windowHeight + 'px'});
 }
