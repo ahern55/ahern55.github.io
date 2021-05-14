@@ -39,8 +39,7 @@ footer {
 }
 
 .edit-height {
-  height: -webkit-fill-available;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .hidden {
