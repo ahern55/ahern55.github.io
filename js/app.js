@@ -1,6 +1,6 @@
 $(function () {
   setHeight();
-  $(window).on('resize orientationchange', setHeight);
+  // $(window).on('resize orientationchange', setHeight);
   var controller = new ScrollMagic.Controller();
 
   // new ScrollMagic.Scene(
@@ -96,6 +96,7 @@ $(function () {
 });
 
 function setHeight() {
+    windowHeight = $(window).height(),
     block = $('.edit-height');
-    block.css({'height': '100vh'}) 
+    block.css({'height': windowHeight + 'px'}) 
 }
