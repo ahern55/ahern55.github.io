@@ -12,6 +12,11 @@
     var(--second-gradient-color) 0%,
     var(--first-gradient-color) 100%
   );
+  --sideways-gradient: linear-gradient(
+    to right,
+    var(--first-gradient-color) 0%,
+    var(--second-gradient-color) 100%
+  );
   --dark-gray: rgb(153, 153, 153);
   
 }
@@ -29,7 +34,7 @@ body {
 
 #header-wrapper,
 #resume,
-footer {
+#thank-you {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,14 +43,25 @@ footer {
   text-align: center;
 }
 
-.edit-height {
-  height: 100vh;
+#header-wrapper,
+#thank-you {
+  background-color: white;
 }
 
-@media (max-width : 740px) {
-  .edit-height {
-    height: 900px;  
-  }
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  height: 5%;
+  padding: 2% 0;
+  bottom: 0;
+  z-index: -10;
+  text-align: center;
+  background-image: var(--sideways-gradient);
+}
+
+
+.edit-height {
+  height: 100vh;
 }
 
 .hidden {
@@ -190,6 +206,13 @@ a:hover {
   color: var(--second-gradient-color);
 }
 
+footer .row div {
+    font-weight: bold;
+}
+
+
+/***************************************************************************************************/
+/**************************************Timeline*****************************************************/
 /***************************************************************************************************/
 
 @media (min-width: 1100px) {
