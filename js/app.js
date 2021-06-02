@@ -1,6 +1,6 @@
 $(function () {
   setHeight();
-  // $(window).on('resize orientationchange', setHeight);
+  $(window).on('resize orientationchange', setHeight);
   var controller = new ScrollMagic.Controller();
 
   // new ScrollMagic.Scene(
@@ -96,7 +96,7 @@ $(function () {
 });
 
 function setHeight() {
-    windowHeight = $(window).outerHeight();
+    windowHeight = $(window).height();
 
     //make into a string
     windowHeightString = windowHeight + 'px'
