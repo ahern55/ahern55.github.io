@@ -96,7 +96,7 @@ $(function () {
 });
 
 function setHeight() {
-    windowHeight = $(window).innerHeight();
+    windowHeight = $(window).outerHeight();
 
     //make into a string
     windowHeightString = windowHeight + 'px'
