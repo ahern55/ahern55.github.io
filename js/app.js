@@ -30,8 +30,8 @@ $(function () {
       start: "middle middle",
       markers: false, //for debugging!
       toggleActions: "play none none reverse",
-      scrub: true, //this makes it animate *with* scroll, instead of doing it all at once when trigger is reached
-      pin: true //pins the header to the screen while the school words are animating
+      // scrub: true, //this makes it animate *with* scroll, instead of doing it all at once when trigger is reached
+      // pin: true //pins the header to the screen while the school words are animating
     }
   });
 
