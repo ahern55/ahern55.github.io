@@ -1,7 +1,6 @@
 $(function () {
   setHeight();
   $(window).on('resize orientationchange', setHeight);
-  var controller = new ScrollMagic.Controller();
 
   // new ScrollMagic.Scene(
   //     {triggerElement: "#info-sections",
@@ -24,24 +23,37 @@ $(function () {
   //     .addTo(controller)
   //     .reverse(true);
 
-  var schoolAnimation = new TimelineMax().fromTo(
+
+  var schoolAnimation = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#header-wrapper",
+      start: "middle middle",
+      markers: "false", //for debugging!
+      toggleActions: "play none none reverse",
+      scrub: true, //this makes it animate *with* scroll, instead of doing it all at once when trigger is reached
+      pin: true //pins the header to the screen while the school words are animating
+    }
+  });
+
+  schoolAnimation.fromTo(
     "#school",
     1,
     { opacity: 0 },
-    { opacity: 1, ease: Linear.easeNone }
-  ); // fades in
-  // create scene to pin and link animation
-  new ScrollMagic.Scene({
-    triggerElement: "#header-wrapper",
-    triggerHook: "onLeave",
-    duration: "100%",
-  })
-    .setPin("#header-wrapper")
-    .setTween(schoolAnimation)
-    .addTo(controller);
+    { opacity: 1, ease: Linear.easeNone}  
+  ); 
 
-  var animation = new TimelineMax()
-    .fromTo(
+  var mainAnimation = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#info-sections",
+      start: "middle middle",
+      markers: "true", //debug
+      toggleActions: "play none none reverse",
+      scrub: true, 
+      pin: true
+    }
+  });
+
+  mainAnimation.fromTo(
       "#socials-wrapper",
       10,
       { opacity: 0 },
@@ -58,17 +70,7 @@ $(function () {
       5,
       { opacity: 1 },
       { opacity: 0, ease: Linear.easeNone }
-    ); // fades out
-  //.fromTo("#timeline", 10, {y: "0%"}, {y: "-100%", ease: Linear.easeNone}) //timeline scroll
-  // create scene to pin and link animation
-  new ScrollMagic.Scene({
-    triggerElement: "#info-sections",
-    triggerHook: "onLeave",
-    duration: "200%",
-  })
-    .setPin("#info-sections")
-    .setTween(animation)
-    .addTo(controller);
+    ); // fades out  
 
   //  bind scroll to anchor links
   $(document).on("click", ".nav-link", function (e) {
