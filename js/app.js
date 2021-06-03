@@ -73,6 +73,19 @@ $(function () {
       { opacity: 0, ease: Linear.easeNone }
     ); // fades out  
 
+    var footerStallAnimation = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#thank-you",
+        start: "middle middle",
+        markers: false, //for debugging!
+        toggleActions: "play none none reverse",
+        scrub: true, //this makes it animate *with* scroll, instead of doing it all at once when trigger is reached
+        pin: true, //pins the header to the screen while the school words are animating
+        end: "+=500"
+      }
+    });
+  
+
   //  bind scroll to anchor links
   $(document).on("click", ".nav-link", function (e) {
     var value = $(this).attr("href");
