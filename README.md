@@ -1,6 +1,6 @@
 # ahern55.github.io (WIP)
 
-https://ahern55.github.io // https://go.osu.edu/jasonahern
+https://www.jasonahern.com
 
 Work in progress personal website. Optimized for desktop, servicable on mobile. 
 
