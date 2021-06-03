@@ -1,6 +1,6 @@
 $(function () {
-  setHeight();
-  $(window).on('resize orientationchange', setHeight);
+  // setHeight();
+  // $(window).on('resize orientationchange', setHeight);
 
   // new ScrollMagic.Scene(
   //     {triggerElement: "#info-sections",
@@ -46,7 +46,7 @@ $(function () {
     scrollTrigger: {
       trigger: "#info-sections",
       start: "middle middle",
-      markers: "true", //debug
+      markers: "false", //debug
       toggleActions: "play none none reverse",
       scrub: true, 
       pin: true

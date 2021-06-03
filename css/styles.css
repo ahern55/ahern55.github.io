@@ -27,8 +27,8 @@
   font-family: "Montserrat", sans-serif;
 }
 
-body {
-
+.edit-height {
+  height: 100vh;
 }
 
 #header-wrapper,
