@@ -49,13 +49,14 @@ $(function () {
       markers: false, //debug
       toggleActions: "play none none reverse",
       scrub: true, 
-      pin: true
+      pin: true,
+      end: "+=2000"
     }
-  });
+  })
 
   mainAnimation.fromTo(
       "#socials-wrapper",
-      10,
+      5,
       { opacity: 0 },
       { opacity: 1, ease: Linear.easeNone }
     ) // fades in
