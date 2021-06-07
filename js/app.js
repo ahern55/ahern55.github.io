@@ -23,7 +23,6 @@ $(function () {
   //     .addTo(controller)
   //     .reverse(true);
 
-
   var schoolAnimation = gsap.timeline({
     scrollTrigger: {
       trigger: "#header-wrapper",
@@ -32,15 +31,15 @@ $(function () {
       toggleActions: "play none none reverse",
       // scrub: true, //this makes it animate *with* scroll, instead of doing it all at once when trigger is reached
       // pin: true //pins the header to the screen while the school words are animating
-    }
+    },
   });
 
   schoolAnimation.fromTo(
     "#school",
     1,
     { opacity: 0 },
-    { opacity: 1, ease: Linear.easeNone}  
-  ); 
+    { opacity: 1, ease: Linear.easeNone }
+  );
 
   var mainAnimation = gsap.timeline({
     scrollTrigger: {
@@ -48,20 +47,21 @@ $(function () {
       start: "middle middle",
       markers: false, //debug
       toggleActions: "play none none reverse",
-      scrub: true, 
+      scrub: true,
       pin: true,
-      end: "+=2000"
-    }
-  })
+      end: "+=2000",
+    },
+  });
 
-  mainAnimation.fromTo(
+  mainAnimation
+    .fromTo(
       "#socials-wrapper",
       5,
       { opacity: 0 },
       { opacity: 1, ease: Linear.easeNone }
     ) // fades in
     .fromTo(
-      "section.panel.second",
+      ".panel.second",
       10,
       { x: "100%" },
       { x: "0%", ease: Linear.easeNone }
@@ -71,20 +71,19 @@ $(function () {
       5,
       { opacity: 1 },
       { opacity: 0, ease: Linear.easeNone }
-    ); // fades out  
+    ); // fades out
 
-    var footerStallAnimation = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#thank-you",
-        start: "middle middle",
-        markers: false, //for debugging!
-        toggleActions: "play none none reverse",
-        scrub: true, //this makes it animate *with* scroll, instead of doing it all at once when trigger is reached
-        pin: true, //pins the header to the screen while the school words are animating
-        end: "+=500"
-      }
-    });
-  
+  var footerStallAnimation = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#thank-you",
+      start: "middle middle",
+      markers: false, //for debugging!
+      toggleActions: "play none none reverse",
+      scrub: true, //this makes it animate *with* scroll, instead of doing it all at once when trigger is reached
+      pin: true, //pins the header to the screen while the school words are animating
+      end: "+=500",
+    },
+  });
 
   //  bind scroll to anchor links
   $(document).on("click", ".nav-link", function (e) {
@@ -112,10 +111,10 @@ $(function () {
 });
 
 function setHeight() {
-    windowHeight = $(window).height();
+  windowHeight = $(window).height();
 
-    //make into a string
-    windowHeightString = windowHeight + 'px'
+  //make into a string
+  windowHeightString = windowHeight + "px";
 
-    $('.edit-height').css({'height': windowHeightString});
+  $(".edit-height").css({ height: windowHeightString });
 }
