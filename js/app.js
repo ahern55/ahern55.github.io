@@ -1,28 +1,4 @@
 $(function () {
-  // setHeight();
-  // $(window).on('resize orientationchange', setHeight);
-
-  // new ScrollMagic.Scene(
-  //     {triggerElement: "#info-sections",
-  //     triggerHook: 1,
-  //     duration: 100,
-  //     offset: -43
-  //     })
-  //     .setClassToggle("#navigation", "hidden") // add class toggle
-  //     .addIndicators() // add indicators (requires plugin)
-  //     .addTo(controller);
-
-  // new ScrollMagic.Scene(
-  //     {triggerElement: "#info-sections",
-  //     triggerHook: 0,
-  //     duration: 100,
-  //     offset: 0,
-  //     })
-  //     .setClassToggle("#logo-wrapper", "hidden") // add class toggle
-  //     .addIndicators() // add indicators (requires plugin)
-  //     .addTo(controller)
-  //     .reverse(true);
-
   var schoolAnimation = gsap.timeline({
     scrollTrigger: {
       trigger: "#header-wrapper",
@@ -109,12 +85,3 @@ $(function () {
     window.open("resources/resume.pdf", "_blank");
   });
 });
-
-function setHeight() {
-  windowHeight = $(window).height();
-
-  //make into a string
-  windowHeightString = windowHeight + "px";
-
-  $(".edit-height").css({ height: windowHeightString });
-}
