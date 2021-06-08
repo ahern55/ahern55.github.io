@@ -287,7 +287,6 @@ footer .row div {
   #timeline .timeline-card-wrapper {
     display: flex;
     flex-flow: column wrap;
-    width: 1170px;
     height: 1650px;
     margin: 0 auto;
   }
