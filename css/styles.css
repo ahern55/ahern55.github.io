@@ -288,6 +288,7 @@ footer .row div {
     display: flex;
     flex-flow: column wrap;
     height: 1650px;
+    width: 1170px;
     margin: 0 auto;
   }
 }
