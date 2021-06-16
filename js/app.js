@@ -1,4 +1,16 @@
 $(function () {
+  //preloader
+  $(window).on("load", function () {
+    var preloaderFadeOutTime = 500;
+    function hidePreloader() {
+      var preloader = $(".spinner-wrapper");
+      setTimeout(function () {
+        preloader.fadeOut(preloaderFadeOutTime);
+      }, preloaderFadeOutTime);
+    }
+    hidePreloader();
+  });
+
   var schoolAnimation = gsap.timeline({
     scrollTrigger: {
       trigger: "#header-wrapper",
