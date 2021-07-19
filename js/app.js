@@ -149,7 +149,7 @@ $(function () {
     mainClass: "my-mfp-slide-bottom",
   });
 
-  var footerStallAnimation = gsap.timeline({
+  gsap.timeline({
     scrollTrigger: {
       trigger: "#thank-you",
       start: "middle middle",
