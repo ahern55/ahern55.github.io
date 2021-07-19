@@ -61,18 +61,6 @@ $(function () {
       { opacity: 0, ease: Linear.easeNone }
     ); // fades out
 
-  var footerStallAnimation = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#thank-you",
-      start: "middle middle",
-      markers: false, //for debugging!
-      toggleActions: "play none none reverse",
-      scrub: true, //this makes it animate *with* scroll, instead of doing it all at once when trigger is reached
-      pin: true, //pins the header to the screen while the school words are animating
-      end: "+=500",
-    },
-  });
-
   //  bind scroll to anchor links
   $(document).on("click", ".nav-link", function (e) {
     var value = $(this).attr("href");
@@ -97,14 +85,37 @@ $(function () {
     window.open("resources/resume.pdf", "_blank");
   });
 
-  const boxes = gsap.utils.toArray(".project-bubble");
+  gsap.to("#projects-intro", {
+    scrollTrigger: {
+      trigger: "#projects-intro",
+      scrub: true,
+      pin: true,
+      start: "center center",
+      end: "bottom -50%",
+      toggleClass: "active",
+      ease: "power2",
+    },
+  });
+
+  gsap.to("#projects-intro-image", {
+    scrollTrigger: {
+      trigger: "#projects-intro",
+      scrub: 0.5,
+      start: "top bottom",
+      end: "bottom -150%",
+      ease: "power2",
+    },
+    y: "-30%",
+  });
+
+  const projectBubbles = gsap.utils.toArray(".project-bubble");
 
   // Set things up
-  gsap.set(boxes, { autoAlpha: 0, y: 50 });
+  gsap.set(projectBubbles, { autoAlpha: 0, y: 50 });
 
-  boxes.forEach((box, i) => {
+  projectBubbles.forEach((projectBubble, i) => {
     // Set up your animation
-    const anim = gsap.to(box, {
+    const anim = gsap.to(projectBubble, {
       duration: 1,
       autoAlpha: 1,
       y: 0,
@@ -113,7 +124,8 @@ $(function () {
 
     // Use callbacks to control the state of the animation
     ScrollTrigger.create({
-      trigger: box,
+      trigger: projectBubble,
+      start: "top bottom",
       end: "bottom bottom",
       once: true,
       onEnter: (self) => {
@@ -133,7 +145,19 @@ $(function () {
     closeBtnInside: true,
     preloader: false,
     midClick: true,
-    removalDelay: 300,
+    removalDelay: 100,
     mainClass: "my-mfp-slide-bottom",
+  });
+
+  var footerStallAnimation = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#thank-you",
+      start: "middle middle",
+      markers: false, //for debugging!
+      toggleActions: "play none none reverse",
+      scrub: true, //this makes it animate *with* scroll, instead of doing it all at once when trigger is reached
+      pin: true, //pins the header to the screen while the school words are animating
+      end: "+=500",
+    },
   });
 });
