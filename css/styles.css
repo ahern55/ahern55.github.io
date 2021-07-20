@@ -735,15 +735,12 @@ footer .row div {
 	text-align: left;
 }
 
-.project-lightbox img {
-	margin-right: auto;
+.project-lighthouse-picture {
+  width: 90%;
+  margin-right: auto;
 	margin-bottom: 2rem;
 	margin-left: auto;
 	border-radius: 0.25rem;
-}
-
-.project-lighthouse-picture {
-  width: 90%;
 }
 
 @media (max-width: 575px) {
@@ -786,22 +783,17 @@ footer .row div {
 .github-button {
   width:100%;
   margin-bottom: 0;
-  vertical-align: middle;
-  line-height: 0;
-}
-
-.github-button-wrapper:hover {
-  --dim: 90%;
-  filter: brightness(var(--dim));
-  -webkit-filter: brightness(var(--dim));
+  display: inline-block;
 }
 
 .github-button-link {
-  display:grid;
-  margin: 0;
+  margin-right: 0;
+  width: 50%;
+  padding: 0;
 }
 
-.github-button-wrapper {
-  padding-left: 0;
-  padding-top: 5%;
+.github-button-link:hover {
+  --dim: 90%;
+  filter: brightness(var(--dim));
+  -webkit-filter: brightness(var(--dim));
 }
