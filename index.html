@@ -414,12 +414,10 @@
               class="project-bubble popup-with-move-anim"
               href="#this-website-lightbox"
             >
-              <div class="project-picture-wrapper">
                 <img
                   class="project-picture"
                   src="resources/initialsgradientDarkThin.png"
                 />
-              </div>
               <div class="project-title">This Website!</div>
               <div class="project-info-brief">
                 A personal portfolio website made only with HTML, CSS, and
@@ -430,81 +428,93 @@
           </div>
 
           <div class="col-6 col-lg-4 p-2">
-            <div class="project-bubble">
-              <div class="project-picture-wrapper">
+            <a
+              class="project-bubble popup-with-move-anim"
+              href="#your-recipes-lightbox"
+            >
                 <img
                   class="project-picture"
                   src="resources/your-recipes-logo.png"
                 />
-              </div>
               <div class="project-title">Your Recipes</div>
               <div class="project-info-brief">
                 A simple, work-in-progress, recipe management mobile app!
               </div>
-            </div>
+            </a>
           </div>
 
+
           <div class="col-6 col-lg-4 p-2">
-            <div class="project-bubble">
-              <div class="project-picture-wrapper">
+            <a
+              class="project-bubble popup-with-move-anim"
+              href="#nhl-data-lightbox"
+            >
                 <img
                   class="project-picture"
                   src="resources/nhl-data-analysis-transparent.png"
                 />
-              </div>
               <div class="project-title">NHL Data Analysis</div>
               <div class="project-info-brief">
-                A python webscraping project for NHL empty net Analytics.
+                A python project for collecting NHL empty net data.
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-6 col-lg-4 p-2">
-            <div class="project-bubble">
-              <div class="project-picture-wrapper">
+            <a
+              class="project-bubble popup-with-move-anim"
+              href="#this-website-lightbox"
+            >
                 <img
                   class="project-picture"
                   src="resources/squirrel-clinton.jpg"
                 />
-              </div>
               <div class="project-title">Photoshop Projects</div>
               <div class="project-info-brief">
                 Some fun and goofy Photoshop projects I've made over the years.
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-6 col-lg-4 p-2">
-            <div class="project-bubble">
-              <div class="project-picture-wrapper">
+            <a
+              class="project-bubble popup-with-move-anim"
+              href="#this-website-lightbox"
+            >
                 <img
                   class="project-picture"
                   src="resources/jack-benak-fund.jpg"
                 />
-              </div>
               <div class="project-title">Jack Benak Fund</div>
               <div class="project-info-brief">
                 A tribute and memorial website to my best friend.
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-6 col-lg-4 p-2">
-            <div class="project-bubble">
-              <div class="project-picture-wrapper">
-                <img class="project-picture" src="resources/bird.png" />
-              </div>
+            <a
+              class="project-bubble popup-with-move-anim"
+              href="#this-website-lightbox"
+            >
+                <img
+                  class="project-picture"
+                  src="resources/bird.png"
+                />
               <div class="project-title">Birds Aren't Real</div>
               <div class="project-info-brief">
                 My dissertation on the nonexistence of birds. Have a read!
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Lightbox popups for the projects -->
+    <!-- ******************************************************************* -->
+    <!-- ***************************This Website**************************** -->
+    <!-- ******************************************************************* -->
     <div
       id="this-website-lightbox"
       class="project-lightbox zoom-anim-dialog mfp-hide"
@@ -538,6 +548,99 @@
             <a
             class="col-sm-5 github-button-link d-flex justify-content-start"
             href="https://github.com/ahern55/ahern55.github.io"
+            target="_blank">
+              <img
+                class="github-button"
+                src="resources/view-on-github.png"
+                alt="view on github"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ******************************************************************* -->
+    <!-- ***************************Your Recipes**************************** -->
+    <!-- ******************************************************************* -->
+    <div
+      id="your-recipes-lightbox"
+      class="project-lightbox zoom-anim-dialog mfp-hide"
+    >
+      <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="col-sm-4">
+          <img
+            class="project-lighthouse-picture"
+            src="resources/your-recipes-logo.png"
+          />
+
+        </div>
+        <!-- end of col -->
+        <div class="col-sm-8">
+          <h3>Your Recipes</h3>
+          <hr class="line-heading" />
+          <h6>A Mobile App</h6>
+          <p>I created this app as a minimum viable product of sorts. </p>
+            
+          <p>I used .NET with Xamarin.Forms to build the native apps for iOS and Android with one tooling.</p>
+          
+          <p>
+            I currently use a C# SQLite package to store on the devices' local hard drives, but eventually
+            I'd like to host some central database server. I'd probably write the API in node.js
+          </p>
+
+            <a
+            class="col-sm-5 github-button-link d-flex justify-content-start"
+            href="https://github.com/ahern55/recipes"
+            target="_blank">
+              <img
+                class="github-button"
+                src="resources/view-on-github.png"
+                alt="view on github"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ******************************************************************* -->
+    <!-- ******************************NHL Data***************************** -->
+    <!-- ******************************************************************* -->
+    <div
+      id="nhl-data-lightbox"
+      class="project-lightbox zoom-anim-dialog mfp-hide"
+    >
+      <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="col-sm-4">
+          <img
+            class="project-lighthouse-picture"
+            src="resources/nhl-data-analysis-transparent.png"
+          />
+
+        </div>
+        <!-- end of col -->
+        <div class="col-sm-8">
+          <h3>NHL Data Analysis</h3>
+          <hr class="line-heading" />
+          <h6>A Mini Python Project</h6>
+          <p>I used python to interface with the NHL's web API, collecting empty net data for a statistics project.</p>
+            
+          <p>The actual data analysis happened in Excel (regrettably). Here are the modules I used:</p>
+          <ul class="lightbox-list">
+            <li>Pandas</li>
+            <li>Requests</li>
+          </ul>
+
+            <a
+            class="col-sm-5 github-button-link d-flex justify-content-start"
+            href="https://github.com/ahern55/econ_data_project"
             target="_blank">
               <img
                 class="github-button"
