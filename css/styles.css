@@ -784,20 +784,23 @@ footer .row div {
   margin-right: 2%;
 }
 
-.github-button {
+.lighthouse-button {
   width:100%;
   margin-bottom: 0;
   display: inline-block;
 }
 
-.github-button-link {
+.lighthouse-button-link {
   margin-right: 0;
-  width: 50%;
   padding: 0;
 }
 
-.github-button-link:hover {
+.lighthouse-button-link:hover {
   --dim: 90%;
   filter: brightness(var(--dim));
   -webkit-filter: brightness(var(--dim));
+}
+
+.app-store-buttons {
+  margin-bottom: 2rem;
 }
