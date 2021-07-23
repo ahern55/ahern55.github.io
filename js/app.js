@@ -1,6 +1,6 @@
 $(function () {
   //preloader
-  $(window).on("load", function () {
+  $(document).ready( () => {
     var preloaderFadeOutTime = 500;
     function hidePreloader() {
       var preloader = $(".spinner-wrapper");
