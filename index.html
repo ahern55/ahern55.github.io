@@ -34,12 +34,12 @@
       href="resources/initialsGradientDark.png"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.0-alpha.4/dist/fancybox.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
   </head>
 
   <body>
@@ -91,13 +91,13 @@
       <img id="logo" alt="JA" src="resources/initialsGradientDark.png" />
     </div>
 
-    <div id="header-wrapper" class="edit-height">
+    <div id="header-wrapper" class="full-viewport-height">
       <h1>Jason Ahern</h1>
       <h2 id="school">The Ohio State University</h2>
     </div>
     <div id="spacer"></div>
 
-    <div id="info-sections" class="edit-height">
+    <div id="info-sections" class="full-viewport-height">
       <div id="about" class="panel first">
         <div id="headshot-wrapper">
           <img
@@ -148,7 +148,7 @@
       </div>
 
       <div id="experience" class="panel second">
-        <div id="resume" class="edit-height">
+        <div id="resume" class="full-viewport-height">
           <h1>A Brief Resume...</h1>
         </div>
       </div>
@@ -193,16 +193,27 @@
             <!-- TODO: imbed these videos in a modal of some sort -->
             <div class="timeline-card-links first">
               <a
+                class="colored-link"
                 target="_blank"
                 href="https://www.twinsburg.k12.oh.us/VideoUp/b1a2093a-f3bc-4b60-9ab6-a6ca11df7fed.mp4.ogv"
                 >2017</a
               >
             </div>
             <div class="timeline-card-links second">
-              <a target="_blank" href="https://youtu.be/RRK_UKVh8oM">2018</a>
+              <a
+                class="colored-link"
+                target="_blank"
+                href="https://youtu.be/RRK_UKVh8oM"
+                >2018</a
+              >
             </div>
             <div class="timeline-card-links third">
-              <a target="_blank" href="https://youtu.be/_nG0ar52_CE">2019</a>
+              <a
+                class="colored-link"
+                target="_blank"
+                href="https://youtu.be/_nG0ar52_CE"
+                >2019</a
+              >
             </div>
           </div>
         </div>
@@ -380,11 +391,356 @@
       </div>
     </div>
 
-    <div id="projects" class="edit-height hidden"></div>
+    <section id="projects-intro">
+      <div id="projects-intro-inner">
+        <div id="projects-intro-images">
+          <img
+            id="projects-intro-image"
+            src="resources/projects-background.jpg"
+          />
+        </div>
+        <div id="projects-intro-content">
+          <div id="projects-intro-headline"><span>Projects</span></div>
+        </div>
+      </div>
+    </section>
 
-    <div id="thank-you" class="edit-height">
-      <h1>Thank you for visiting!</h1>
+    <div id="projects" class="justify-content-center">
+      <div id="projects-container" class="container-fluid text-center px-5">
+        <div class="row justify-content-center">
+          <div class="col-6 col-lg-4 p-2">
+            <a
+              class="project-bubble popup-with-move-anim"
+              href="#this-website-lightbox"
+            >
+                <img
+                  class="project-picture"
+                  src="resources/initialsgradientDarkThin.png"
+                />
+              <div class="project-title">This Website!</div>
+              <div class="project-info-brief">
+                A personal portfolio website made only with HTML, CSS, and
+                JavaScript! <br />
+                (And some coffee)
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-4 p-2">
+            <a
+              class="project-bubble popup-with-move-anim"
+              href="#your-recipes-lightbox"
+            >
+                <img
+                  class="project-picture"
+                  src="resources/your-recipes-logo.png"
+                />
+              <div class="project-title">Your Recipes</div>
+              <div class="project-info-brief">
+                A simple, work-in-progress, recipe management mobile app!
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-6 col-lg-4 p-2">
+            <a
+              class="project-bubble popup-with-move-anim"
+              href="#nhl-data-lightbox"
+            >
+                <img
+                  class="project-picture"
+                  src="resources/nhl-data-analysis-transparent.png"
+                />
+              <div class="project-title">NHL Data Analysis</div>
+              <div class="project-info-brief">
+                A python project for collecting NHL empty net data.
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-4 p-2">
+            <a
+              data-fancybox="gallery"
+              data-caption="Squirrel x Bill Clinton"
+              class="project-bubble"
+              href="resources/squirrel-clinton.jpg"
+            >
+                <img
+                  class="project-picture"
+                  src="resources/squirrel-clinton.jpg"
+                />
+              <div class="project-title">Photoshop Projects</div>
+              <div class="project-info-brief">
+                Some fun and goofy Photoshop projects I've made over the years.
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-4 p-2">
+            <a
+              class="project-bubble popup-with-move-anim"
+              href="#jack-benak-fund-lightbox"
+            >
+                <img
+                  class="project-picture"
+                  src="resources/jack-benak-fund.jpg"
+                />
+              <div class="project-title">Jack Benak Fund</div>
+              <div class="project-info-brief">
+                A tribute and memorial website for my best friend.
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-4 p-2">
+            <a
+              class="project-bubble"
+              href="resources/birdsArentReal.pdf"
+              target="_blank"
+            >
+                <img
+                  class="project-picture"
+                  src="resources/bird.png"
+                />
+              <div class="project-title">Birds Aren't Real</div>
+              <div class="project-info-brief">
+                My dissertation on the nonexistence of birds. Have a read!
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Lightbox popups for the projects -->
+    <!-- ******************************************************************* -->
+    <!-- ***************************This Website**************************** -->
+    <!-- ******************************************************************* -->
+    <div
+      id="this-website-lightbox"
+      class="project-lightbox zoom-anim-dialog mfp-hide"
+    >
+      <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="col-sm-4">
+          <img
+            class="project-lighthouse-picture"
+            src="resources/initialsgradientDarkThin.png"
+          />
+
+        </div>
+        <!-- end of col -->
+        <div class="col-sm-8">
+          <h3>This Website</h3>
+          <hr class="line-heading" />
+          <h6>A personal portfolio</h6>
+          <p>I made this website using a few fun libraries, stylesheets, and tools</p>
+          <ul class="lightbox-list">
+            <li>GSAP -- ScrollTrigger, Timeline</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+            <li>Magnific Popup</li>
+            <li>fancyapps -- Fancybox</li>
+            <li>Photoshop</li>
+            <li>GIMP</li>
+          </ul>
+
+          <p>Feel free to use any code you find here! I drew inspiration from lots of online resources like codepen and stack overflow.</p>
+
+            <a
+            class="col-10 col-sm-4 lighthouse-button-link d-flex justify-content-start"
+            href="https://github.com/ahern55/ahern55.github.io"
+            target="_blank">
+              <img
+                class="lighthouse-button"
+                src="resources/view-on-github.png"
+                alt="view on github"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ******************************************************************* -->
+    <!-- ***************************Your Recipes**************************** -->
+    <!-- ******************************************************************* -->
+    <div
+      id="your-recipes-lightbox"
+      class="project-lightbox zoom-anim-dialog mfp-hide"
+    >
+      <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="col-sm-4">
+          <img
+            class="project-lighthouse-picture"
+            src="resources/your-recipes-logo.png"
+          />
+
+          <div class="app-store-buttons row justify-content-center">
+            <a
+            class="col-6 lighthouse-button-link d-flex justify-content-center p-1"
+            href="https://github.com/ahern55/recipes"
+            target="_blank">
+              <img
+                class="lighthouse-button"
+                src="resources/appleAppStore.png"
+                alt="Download on App Store"
+              />
+            </a>
+  
+            <a
+            class="col-6 lighthouse-button-link d-flex justify-content-center p-1"
+            href="https://github.com/ahern55/recipes"
+            target="_blank">
+              <img
+                class="lighthouse-button"
+                src="resources/androidAppStore.png"
+                alt="Get on Google Play"
+              />
+            </a>
+        </div>
+
+        </div>
+        <!-- end of col -->
+        <div class="col-sm-8">
+          <h3>Your Recipes</h3>
+          <hr class="line-heading" />
+          <h6>A Recipe Management Mobile App</h6>
+          <p>I created this app as a minimum viable product of sorts. </p>
+            
+          <p>I used .NET with Xamarin.Forms to build the native apps for iOS and Android with one tooling.</p>
+          
+          <p>
+            I currently use a C# SQLite package to store on the devices' local hard drives, but eventually
+            I'd like to host some central database server. I'd probably write the API in node.js
+          </p>
+
+          <a
+            class="col-10 col-sm-4 lighthouse-button-link d-flex"
+            href="https://github.com/ahern55/recipes"
+            target="_blank">
+              <img
+              class="lighthouse-button"
+              src="resources/view-on-github.png"
+              alt="view on github"
+            />
+          </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ******************************************************************* -->
+    <!-- ******************************NHL Data***************************** -->
+    <!-- ******************************************************************* -->
+    <div
+      id="nhl-data-lightbox"
+      class="project-lightbox zoom-anim-dialog mfp-hide"
+    >
+      <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="col-sm-4">
+          <img
+            class="project-lighthouse-picture"
+            src="resources/nhl-data-analysis-transparent.png"
+          />
+
+        </div>
+        <!-- end of col -->
+        <div class="col-sm-8">
+          <h3>NHL Data Analysis</h3>
+          <hr class="line-heading" />
+          <h6>A Mini Python Project</h6>
+          <p>I used python to interface with the NHL's web API, collecting empty net data for a statistics project.</p>
+            
+          <p>The actual data analysis happened in Excel (regrettably). Here are the modules I used:</p>
+          <ul class="lightbox-list">
+            <li>Pandas</li>
+            <li>Requests</li>
+          </ul>
+
+            <a
+            class="col-10 col-sm-4 lighthouse-button-link d-flex justify-content-start"
+            href="https://github.com/ahern55/econ_data_project"
+            target="_blank">
+              <img
+                class="lighthouse-button"
+                src="resources/view-on-github.png"
+                alt="view on github"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ******************************************************************* -->
+    <!-- *****************************Jack********************************** -->
+    <!-- ******************************************************************* -->
+    <div
+      id="jack-benak-fund-lightbox"
+      class="project-lightbox zoom-anim-dialog mfp-hide"
+    >
+      <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="col-sm-4">
+          <img
+            class="project-lighthouse-picture"
+            src="resources/jack-benak-fund.jpg"
+          />
+
+        </div>
+        <!-- end of col -->
+        <div class="col-sm-8">
+          <h3>Jack Benak Fund</h3>
+          <hr class="line-heading" />
+          <h6><a class="colored-link" target="_blank" href="https://jackbenakfund.org">jackbenakfund.org</a></h6>
+          
+          <p>A tribute website.</p>
+
+          <p>Didn't really want to put this on here, but it did introduce me to web design.</p>
+          
+          <p>I used a template from Inovatik.</p>
+          
+          <p>If you're reading this, head over to the website and learn a bit about Jack!</p>
+          
+          <a
+            class="col-10 col-sm-4 lighthouse-button-link d-flex justify-content-start"
+            href="https://github.com/ahern55/jackbenakfund"
+            target="_blank">
+            <img
+              class="lighthouse-button"
+              src="resources/view-on-github.png"
+              alt="view on github"
+            />
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ******************************************************************* -->
+    <!-- **************************Photoshop******************************** -->
+    <!-- ******************************************************************* -->
+    <a data-caption="Jawas Poster" data-fancybox="gallery" href="resources/jawas.jpg"></a>
+    <a data-caption="Jar Jar the Sith Lord" data-fancybox="gallery" href="resources/jar-jar.jpg"></a>
+    <a data-caption="Lots of Adams" data-fancybox="gallery" href="resources/adam-times-five.jpg"></a>
+    
+
+    <section id="thank-you" class="full-viewport-height">
+      <h1>Thank you for visiting!</h1>
+    </section>
 
     <footer>
       <div class="container">
@@ -401,10 +757,10 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
