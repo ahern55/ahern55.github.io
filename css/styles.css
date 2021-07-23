@@ -804,3 +804,12 @@ footer .row div {
 .app-store-buttons {
   margin-bottom: 2rem;
 }
+
+.fancybox__container .fancybox__content {
+  color: white;
+}
+
+.fancybox__content > .carousel__button.is-close {
+  top: 0;
+  right: -38px;
+}
