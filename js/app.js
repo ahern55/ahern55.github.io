@@ -161,3 +161,21 @@ $(function () {
     },
   });
 });
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+  dragToClose: true,
+  Thumbs: true,
+
+  Image: {
+      zoom: true,
+      click: false,
+      wheel: "slide",
+  },
+
+  on: {
+      // Move caption inside the slide
+      reveal: (f, slide) => {
+          slide.$caption && slide.$content.appendChild(slide.$caption);
+      },
+  },
+});

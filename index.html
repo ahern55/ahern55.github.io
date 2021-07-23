@@ -34,13 +34,12 @@
       href="resources/initialsGradientDark.png"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.0-alpha.4/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
   </head>
 
   <body>
@@ -462,8 +461,10 @@
 
           <div class="col-6 col-lg-4 p-2">
             <a
-              class="project-bubble popup-with-move-anim"
-              href="#this-website-lightbox"
+              data-fancybox="gallery"
+              data-caption="Squirrel x Bill Clinton"
+              class="project-bubble"
+              href="resources/squirrel-clinton.jpg"
             >
                 <img
                   class="project-picture"
@@ -727,6 +728,14 @@
       </div>
     </div>
 
+    <!-- ******************************************************************* -->
+    <!-- **************************Photoshop******************************** -->
+    <!-- ******************************************************************* -->
+    <a data-caption="Jawas Poster" data-fancybox="gallery" href="resources/jawas.jpg"></a>
+    <a data-caption="Jar Jar the Sith Lord" data-fancybox="gallery" href="resources/jar-jar.jpg"></a>
+    <a data-caption="Lots of Adams" data-fancybox="gallery" href="resources/adam-times-five.jpg"></a>
+    
+
     <section id="thank-you" class="full-viewport-height">
       <h1>Thank you for visiting!</h1>
     </section>
@@ -749,6 +758,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
