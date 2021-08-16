@@ -1,6 +1,6 @@
 $(function () {
   //preloader
-  $(document).ready( () => {
+  $(window).on("load", () => {
     var preloaderFadeOutTime = 500;
     function hidePreloader() {
       var preloader = $(".spinner-wrapper");
@@ -167,15 +167,15 @@ Fancybox.bind('[data-fancybox="gallery"]', {
   Thumbs: true,
 
   Image: {
-      zoom: true,
-      click: false,
-      wheel: "slide",
+    zoom: true,
+    click: false,
+    wheel: "slide",
   },
 
   on: {
-      // Move caption inside the slide
-      reveal: (f, slide) => {
-          slide.$caption && slide.$content.appendChild(slide.$caption);
-      },
+    // Move caption inside the slide
+    reveal: (f, slide) => {
+      slide.$caption && slide.$content.appendChild(slide.$caption);
+    },
   },
 });
