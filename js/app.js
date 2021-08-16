@@ -1,16 +1,16 @@
-$(function () {
-  //preloader
-  $(window).on("load", () => {
-    var preloaderFadeOutTime = 500;
-    function hidePreloader() {
-      var preloader = $(".spinner-wrapper");
-      setTimeout(function () {
-        preloader.fadeOut(preloaderFadeOutTime);
-      }, preloaderFadeOutTime);
-    }
-    hidePreloader();
-  });
+//preloader
+$(window).on("load", () => {
+  var preloaderFadeOutTime = 500;
+  function hidePreloader() {
+    var preloader = $(".spinner-wrapper");
+    setTimeout(function () {
+      preloader.fadeOut(preloaderFadeOutTime);
+    }, preloaderFadeOutTime);
+  }
+  hidePreloader();
+});
 
+$(function () {
   var schoolAnimation = gsap.timeline({
     scrollTrigger: {
       trigger: "#header-wrapper",
