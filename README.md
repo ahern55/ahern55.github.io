@@ -18,6 +18,14 @@ Note that this website is not complete, but a work in progress. I may not have m
 ## Other Tools:
 * Photoshop
 * GIMP
+
+## Known Issues:
+* Page height sizing (using viewport heights) does not work on mobile webkit (Instagram, Twitter browsers, etc.)
+* Resume timeline breaks down at certain widths (iPad Air on Chrome, but curiously works well on Safari 🤔)
+* Projects intro picture takes a second to take full screen height on mobile
+
+<p>If you notice any other issues, please let me know! I am pretty busy, and CSS issues can snowball into an all-day fix, so I may never get to fixing them. But I do like to keep these issues documented.</p>
+
 ---
 
 Please feel free to use any code you find here! 
