@@ -1,4 +1,6 @@
-# ahern55.github.io
+<img src="https://github.com/ahern55/ahern55.github.io/blob/master/resources/initialsGradient.png?raw=true" alt="Jason Ahern Initials Logo" width="200"/>
+
+<h1> Jason Ahern Personal Portfolio <a href="https://jasonahern.com">Website</a></h1>
 
 https://www.jasonahern.com
 
