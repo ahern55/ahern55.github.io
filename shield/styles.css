@@ -1,0 +1,142 @@
+:root {
+    --base-diameter: 20vh;
+}
+
+#shield-container{
+    position: relative;
+    height: 100%;
+}
+
+.shield-element {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.shield-element-top-half {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -100%);
+}
+
+.shield-element-bottom-half {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 0%);
+}
+
+.shield-element:hover{
+    transform: translate(50%, -50%) scale(1.05);
+    cursor: pointer;
+}
+
+.shield-element-top-half:hover{
+    transform: translate(50%, -100%) scale(1.1);
+    cursor: pointer;
+}
+
+.shield-element-bottom-half:hover{
+    transform: translate(50%, 0%) scale(1.1);
+    cursor: pointer;
+}
+
+
+#first-circle {
+    --diameter: var(--base-diameter);
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: 50%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 10;
+    background-image: url("resources/layer-1.jpg");
+    background-size: contain;
+}
+
+#second-circle-top {
+    --diameter: calc(var(--base-diameter) * 1.75);
+    width: var(--diameter);
+    height: var(--diameter);
+
+    height: calc(var(--diameter) / 2);
+    border-top-left-radius: calc(var(--diameter) / 2);
+    border-top-right-radius: calc(var(--diameter) / 2);
+    border-bottom: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 9;
+
+    background-image: url("resources/layer-2-top.jpg");
+    background-size: contain;
+}
+
+#second-circle-bottom {
+    --diameter: calc(var(--base-diameter) * 1.75);
+    width: var(--diameter);
+    height: var(--diameter);
+
+    height: calc(var(--diameter) / 2);
+    border-bottom-left-radius: calc(var(--diameter) / 2);
+    border-bottom-right-radius: calc(var(--diameter) / 2);
+    border-top: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 8;
+
+    background-image: url("resources/layer-2-bottom.jpg");
+    background-size: contain;
+}
+
+#third-circle {
+    --diameter: calc(var(--base-diameter) * 2.75);
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: 50%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 7;
+
+    background-image: url("resources/layer-3.jpg");
+    background-size: contain;
+}
+
+#fourth-circle {
+    --diameter: calc(var(--base-diameter) * 3.5);
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: 50%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 6;
+
+    background-image: url("resources/layer-4.jpg");
+    background-size: contain;
+}
+
+#fifth-circle {
+    --diameter: calc(var(--base-diameter) * 4.25);
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: 50%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 5;
+
+    background-image: url("resources/layer-5.png");
+    background-size: contain;
+}
