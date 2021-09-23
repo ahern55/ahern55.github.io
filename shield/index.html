@@ -1,10 +1,17 @@
 <head>
+  <title>Achilles' Shield</title>
+
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/magnific-popup.css" />
   <link rel="stylesheet" href="styles.css" />
 
   <link rel="shortcut icon" type="image/png" href="resources/helmet.png" />
 </head>
 
 <body>
+  <div id="title-wrapper">
+    <div id="title">ACHILLES' SHIELD</div>
+  </div>
   <div id="shield-container">
     <div class="shield-element" id="first-circle"></div>
     <div class="shield-element-top-half" id="second-circle-top"></div>
@@ -15,4 +22,131 @@
 
     <!-- <div class="shield-element" id="upper-half-circle"></div> -->
   </div>
+  <div id="sources">
+    <div>Sources</div>
+  </div>
+
+  <div id="credits">
+    <div>Jason Ahern</div>
+  </div>
+
+  <div
+      id="nhl-data-lightbox"
+      class="project-lightbox zoom-anim-dialog mfp-hide"
+    >
+      <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">
+          ×
+        </button>
+        <div class="col-sm-4">
+
+        </div>
+        <!-- end of col -->
+        <div class="col-sm-8">
+          <h3>NHL Data Analysis</h3>
+          <hr class="line-heading" />
+          <h6>A Mini Python Project</h6>
+          <p>I used python to interface with the NHL's web API, collecting empty net data for a statistics project.</p>
+
+          <p>The actual data analysis happened in Excel (regrettably). Here are the modules I used:</p>
+          <ul class="lightbox-list">
+            <li>Pandas</li>
+            <li>Requests</li>
+          </ul>
+
+            <a
+            class="col-10 col-sm-4 lighthouse-button-link d-flex justify-content-start"
+            href="https://github.com/ahern55/econ_data_project"
+            target="_blank">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.magnific-popup.js"></script>
+<script>
+
+  $(() => {
+        /* Lightbox - Magnific Popup */
+        $(".popup-with-move-anim").magnificPopup({
+        type: "inline",
+        fixedContentPos: false /* keep it false to avoid html tag shift with margin-right: 17px */,
+        fixedBgPos: true,
+        overflowY: "auto",
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 100,
+        mainClass: "my-mfp-slide-bottom"
+      })
+
+      $("#first-circle").click(() => {
+        $.magnificPopup.open({
+        items: {
+            src: $('#nhl-data-lightbox')
+        },
+        type: 'inline'
+        });
+      })
+
+      $("#second-circle-top").click(() => {
+        $.magnificPopup.open({
+        items: {
+            src: $('#nhl-data-lightbox')
+        },
+        type: 'inline'
+        });
+      })
+
+      $("#second-circle-bottom").click(() => {
+        $.magnificPopup.open({
+        items: {
+            src: $('#nhl-data-lightbox')
+        },
+        type: 'inline'
+        });
+      })
+
+      $("#third-circle").click(() => {
+        $.magnificPopup.open({
+        items: {
+            src: $('#nhl-data-lightbox')
+        },
+        type: 'inline'
+        });
+      })
+
+      $("#fourth-circle").click(() => {
+        $.magnificPopup.open({
+        items: {
+            src: $('#nhl-data-lightbox')
+        },
+        type: 'inline'
+        });
+      })
+
+      $("#fifth-circle").click(() => {
+        $.magnificPopup.open({
+        items: {
+            src: $('#nhl-data-lightbox')
+        },
+        type: 'inline'
+        });
+      })
+
+      $("#sources").click(() => {
+        $.magnificPopup.open({
+        items: {
+            src: $('#nhl-data-lightbox')
+        },
+        type: 'inline'
+        });
+      })
+  });
+
+
+
+</script>

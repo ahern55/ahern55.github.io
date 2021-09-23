@@ -2,9 +2,29 @@
     --base-diameter: 20vh;
 }
 
+* {
+    font-family: Garamond, serif;
+}
+
+body {
+    background-image: url('resources/papyrus.jpg');
+}
+
+#title-wrapper {
+    height: 10%;
+    position: relative;
+}
+
+#title {
+    font-size: 6rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
 #shield-container{
     position: relative;
-    height: 100%;
+    height: 90%;
 }
 
 .shield-element {
@@ -139,4 +159,44 @@
 
     background-image: url("resources/layer-5.png");
     background-size: contain;
+}
+
+#sources {
+    position:fixed;
+    left: 0%;
+    top: 40%;
+    width: 3rem;
+    height: 12rem;
+    background: dodgerblue;
+    transition: width 0.25s ease-in;
+}
+
+#sources:hover {
+    width: 5rem;
+    transition: width 0.25s ease-in;
+    cursor: pointer;
+}
+
+#sources div {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: rotate(270deg) translate(15%, 160%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    font-family: Arial;
+}
+
+#credits {
+    position:fixed;
+    bottom: 0%;
+    right: 0%;
+    width: 12rem;
+    height: 3rem;
+}
+
+#credits div {
+    font-size: 2rem;
+    font-weight: bold;
 }
