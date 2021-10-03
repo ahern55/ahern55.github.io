@@ -22,6 +22,12 @@ body {
     width: 100%;
 }
 
+@media (max-height: 775px) {
+    #title {
+        font-size: 5rem;
+    }
+  }
+
 #shield-container{
     position: relative;
     height: 90%;
