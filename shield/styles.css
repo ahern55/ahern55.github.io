@@ -207,7 +207,7 @@ body {
     font-weight: bold;
 }
 
-.project-lightbox div {
+.toggle-bar {
     font-size: 2rem;
 }
 
@@ -234,7 +234,7 @@ body {
     font-size: 1.5rem;
 }
 
-blockquote {
+.scrollable {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
     margin: 1.5em 10px;
