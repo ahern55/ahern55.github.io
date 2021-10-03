@@ -177,9 +177,7 @@ body {
     transition: width 0.25s ease-in;
 }
 
-#sources-lightbox {
-    height: auto;
-}
+
 
 #sources:hover {
     width: 5rem;
@@ -227,6 +225,9 @@ body {
     height: 100%;
 }
 
+#sources-lightbox {
+    height: fit-content;
+}
 
 blockquote {
     background: #f9f9f9;
