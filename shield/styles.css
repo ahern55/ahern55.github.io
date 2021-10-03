@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('resources/papyrus.jpg');
+    background-image: url('resources/papyrus.webp');
 }
 
 #title-wrapper {
@@ -80,7 +80,7 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 10;
-    background-image: url("resources/layer-1.jpg");
+    background-image: url("resources/layer-1.webp");
     background-size: contain;
 }
 
@@ -99,7 +99,7 @@ body {
     box-sizing: border-box;
     z-index: 9;
 
-    background-image: url("resources/layer-2-top.jpg");
+    background-image: url("resources/layer-2-top.webp");
     background-size: contain;
 }
 
@@ -118,7 +118,7 @@ body {
     box-sizing: border-box;
     z-index: 8;
 
-    background-image: url("resources/layer-2-bottom.jpg");
+    background-image: url("resources/layer-2-bottom.webp");
     background-size: contain;
 }
 
@@ -133,7 +133,7 @@ body {
     box-sizing: border-box;
     z-index: 7;
 
-    background-image: url("resources/layer-3.jpg");
+    background-image: url("resources/layer-3-shield.webp");
     background-size: contain;
 }
 
@@ -148,7 +148,7 @@ body {
     box-sizing: border-box;
     z-index: 6;
 
-    background-image: url("resources/layer-4.jpg");
+    background-image: url("resources/layer-4-shield.webp");
     background-size: contain;
 }
 
@@ -163,7 +163,7 @@ body {
     box-sizing: border-box;
     z-index: 5;
 
-    background-image: url("resources/layer-5.png");
+    background-image: url("resources/layer-5-shield.webp");
     background-size: contain;
 }
 
