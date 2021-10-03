@@ -219,6 +219,15 @@ body {
     height: 80vh;
 }
 
+.project-lightbox .row {
+    height: 100%;
+}
+
+.project-lightbox .row .col-sm-8{
+    height: 100%;
+}
+
+
 blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
@@ -227,8 +236,15 @@ blockquote {
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
     overflow: scroll;
-    height: 55vh;
+    height: 75%;
 }
+
+@media (max-height: 775px) {
+    blockquote {
+        height: 60%;
+    }
+  }
+
 blockquote:before {
     color: #ccc;
     content: open-quote;
