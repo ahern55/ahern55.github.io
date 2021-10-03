@@ -229,7 +229,7 @@ body {
 
 .scrollable {
     overflow: scroll;
-    max-height: 75%;
+    max-height: 70%;
 
     font-size: 1.5rem;
 }
