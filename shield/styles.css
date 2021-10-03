@@ -177,8 +177,6 @@ body {
     transition: width 0.25s ease-in;
 }
 
-
-
 #sources:hover {
     width: 5rem;
     transition: width 0.25s ease-in;
@@ -229,6 +227,13 @@ body {
     height: fit-content;
 }
 
+.scrollable {
+    overflow: scroll;
+    max-height: 75%;
+
+    font-size: 1.5rem;
+}
+
 blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;
@@ -236,13 +241,11 @@ blockquote {
     margin-left: 0;
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
-    overflow: scroll;
-    height: 75%;
 }
 
 @media (max-height: 775px) {
     blockquote {
-        height: 60%;
+        max-height: 60%;
     }
   }
 
@@ -256,8 +259,6 @@ blockquote:before {
 }
 blockquote p {
     display: inline;
-    font-size: 1.5rem;
-
 }
 
 .toggle-bar {
