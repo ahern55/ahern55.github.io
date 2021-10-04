@@ -1,4 +1,4 @@
-![Achilles' Shield Watercolor by Carlos Vencenti](resources/achilles-shield-small.webp)
+<img src="/resources/achilles-shield-small.webp" alt="Achilles' Shield Watercolor by Carlos Vincenti" width="200"/>
 
 # Classics 1101H Project 1: Achilles' Shield
 
