@@ -225,6 +225,7 @@ body {
 
 #sources-lightbox {
     height: fit-content;
+    font-size: 1.5rem;
 }
 
 .scrollable {
