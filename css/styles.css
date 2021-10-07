@@ -29,6 +29,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  overflow: overlay;
+}
+
 .full-viewport-height {
   height: 100vh;
   min-height: 100vh;
@@ -810,4 +814,28 @@ footer .row div {
 .fancybox__content > .carousel__button.is-close {
   top: 0;
   right: -38px;
+}
+
+/***************************************************************************************************/
+/**************************************Scrollbar****************************************************/
+/***************************************************************************************************/
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+  cursor: pointer;
 }
