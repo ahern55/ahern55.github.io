@@ -207,9 +207,9 @@ function prettyConsoleLogs() {
     "%cHello 👋",
     "color: white; font-size: 1.5rem; font-family: monospace, sans-serif"
   );
-  console.log("Thanks for visiting my website.");
+  console.log("Thanks for visiting my website!");
   console.log("Want to know how I built this?");
-  console.log("Find any bugs or have any ideas for fetures?");
+  console.log("Find any bugs or have any ideas for features?");
   console.log("Want to work with me?");
   console.log("Shoot me an email at ahern.55@osu.edu");
   console.log(
