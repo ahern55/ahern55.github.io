@@ -11,19 +11,7 @@ $(window).on("load", () => {
 });
 
 $(function () {
-  console.log(
-    "%cHello 👋",
-    "color: white; font-size: 1.5rem; font-family: monospace, sans-serif"
-  );
-  console.log("Thanks for visiting my website.");
-  console.log("Want to know how I built this?");
-  console.log("Find any bugs or have any ideas for fetures?");
-  console.log("Want to work with me?");
-  console.log("Shoot me an email at ahern.55@osu.edu");
-  console.log(
-    "%c🚀",
-    "color: white; font-size: 1.5rem; font-family: monospace, sans-serif"
-  );
+  prettyConsoleLogs();
 
   var schoolAnimation = gsap.timeline({
     scrollTrigger: {
@@ -193,3 +181,39 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     },
   },
 });
+
+function prettyConsoleLogs() {
+  /*
+    ____                                     
+    \ \ \                                   
+     \ \ \     __      ____    ___     ___    
+      \ \ \  /'__`\   /',__\  / __`\ /' _ `\  
+    /\ \_\ \/\ \L\.\_/\__, `\/\ \L\ \/\ \/\ \ 
+    \ \____/\ \__/.\_\/\____/\ \____/\ \_\ \_\
+    \/___/  \/__/\/_/\/___/  \/___/  \/_/\/_/
+  */
+  console.log("  ____\n");
+  console.log("  \\ \\ \\\n");
+  console.log("   \\ \\ \\     __      ____    ___     ___\n");
+  console.log("    \\ \\ \\  / __ \\   /  __\\  / __ \\ /  _  \\\n");
+  console.log(
+    "  /\\ \\_\\ \\/\\ \\ \\ \\_/\\__/  \\/\\ \\ \\ \\/\\ \\/\\ \\\n"
+  );
+  console.log("  \\ \\____/\\ \\__/ \\_\\/\\____/\\ \\____/\\ \\_\\ \\_\\\n");
+  console.log("   \\/___/  \\/__/\\/_/\\/___/  \\/___/  \\/_/\\/_/\n");
+
+  //more coherant stuff
+  console.log(
+    "%cHello 👋",
+    "color: white; font-size: 1.5rem; font-family: monospace, sans-serif"
+  );
+  console.log("Thanks for visiting my website.");
+  console.log("Want to know how I built this?");
+  console.log("Find any bugs or have any ideas for fetures?");
+  console.log("Want to work with me?");
+  console.log("Shoot me an email at ahern.55@osu.edu");
+  console.log(
+    "%c🚀",
+    "color: white; font-size: 1.5rem; font-family: monospace, sans-serif"
+  );
+}
