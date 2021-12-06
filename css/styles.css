@@ -275,6 +275,10 @@ footer .row div {
   order: 3;
 }
 
+.timeline-card:nth-child(6) {
+  order: 6;
+}
+
 #timeline {
   padding: 100px 0;
   background-image: var(--reverse-gradient);
@@ -294,7 +298,7 @@ footer .row div {
   #timeline .timeline-card-wrapper {
     display: flex;
     flex-flow: column wrap;
-    height: 1650px;
+    height: 1800px; /*calc(6 * 300) px;*/
     width: 1170px;
     margin: 0 auto;
   }
@@ -308,6 +312,7 @@ footer .row div {
   left: 50%;
   border-left: 3px solid var(--dark-gray);
 }
+
 /*this is the line in the center of the timeline */
 @media (min-width: 1100px) {
   #timeline .timeline-card-wrapper::after {
@@ -671,7 +676,7 @@ footer .row div {
 .project-bubble:hover {
   background-color: var(--tile-highlighted);
   text-decoration: none;
-  color: #242424
+  color: #242424;
 }
 
 @media (min-width: 750px) {
@@ -731,22 +736,22 @@ footer .row div {
 /**************************************Lightbox*****************************************************/
 /***************************************************************************************************/
 .project-lightbox {
-	position: relative;
-	max-width: 62.5rem;
+  position: relative;
+  max-width: 62.5rem;
   max-height: 90rem;
-	margin: 2.5rem auto;
-	padding: 1.5625rem;
-	border-radius: 0.25rem;
-	background: var(--background-color);
-	text-align: left;
+  margin: 2.5rem auto;
+  padding: 1.5625rem;
+  border-radius: 0.25rem;
+  background: var(--background-color);
+  text-align: left;
 }
 
 .project-lighthouse-picture {
   width: 90%;
   margin-right: auto;
-	margin-bottom: 2rem;
-	margin-left: auto;
-	border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  border-radius: 0.25rem;
 }
 
 @media (max-width: 575px) {
@@ -756,17 +761,17 @@ footer .row div {
 }
 
 .project-lightbox .line-heading {
-	width: 3rem;
-	height: 1px;
-	margin-top: 0;
-	margin-bottom: 0.625rem;
-	margin-left: 0;
-	border: none;
-	background-color: var(--first-gradient-color);
+  width: 3rem;
+  height: 1px;
+  margin-top: 0;
+  margin-bottom: 0.625rem;
+  margin-left: 0;
+  border: none;
+  background-color: var(--first-gradient-color);
 }
 
 .project-lightbox h6 {
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .lightbox-list {
@@ -787,7 +792,7 @@ footer .row div {
 }
 
 .lighthouse-button {
-  width:100%;
+  width: 100%;
   margin-bottom: 0;
   display: inline-block;
 }
