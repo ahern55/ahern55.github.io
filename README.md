@@ -30,5 +30,3 @@ Note that this website is not complete, but a work in progress. I may not have m
 
 Please feel free to use any code you find here! 
 
-The out-of-place stylesheet is just a bootstrap isolation I needed when designing https://u.osu.edu/fehescaperoom2021/
-
