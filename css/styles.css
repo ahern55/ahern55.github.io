@@ -724,11 +724,15 @@ footer .row div {
   }
 
   .project-bubble {
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 60% 40%;
   }
 
   .project-picture {
     width: 50%;
+  }
+
+  .project-title {
+    font-size: 1rem;
   }
 }
 
