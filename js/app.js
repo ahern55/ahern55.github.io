@@ -84,7 +84,7 @@ $(function () {
   });
 
   $(document).on("click", "#resume-button", function (e) {
-    window.open("resources/resume.pdf", "_blank");
+    window.open("https://github.com/ahern55/resume/raw/main/resume.pdf", "_blank");
   });
 
   gsap.to("#projects-intro", {
