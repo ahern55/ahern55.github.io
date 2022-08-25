@@ -202,7 +202,7 @@ function prettyConsoleLogs() {
   console.log("  \\ \\____/\\ \\__/ \\_\\/\\____/\\ \\____/\\ \\_\\ \\_\\\n");
   console.log("   \\/___/  \\/__/\\/_/\\/___/  \\/___/  \\/_/\\/_/\n");
 
-  //more coherant stuff
+  //more coherent stuff
   console.log(
     "%cHello 👋",
     "color: white; font-size: 1.5rem; font-family: monospace, sans-serif"
@@ -211,7 +211,7 @@ function prettyConsoleLogs() {
   console.log("Want to know how I built this?");
   console.log("Find any bugs or have any ideas for features?");
   console.log("Want to work with me?");
-  console.log("Shoot me an email at ahern.55@osu.edu");
+  console.log("Shoot me an email at jason.ahern53@gmail.com");
   console.log(
     "%c🚀",
     "color: white; font-size: 1.5rem; font-family: monospace, sans-serif"
